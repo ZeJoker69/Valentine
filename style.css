@@ -149,8 +149,8 @@ section{
     font-weight: bold;
     line-height: 1.6;
     font-size: clamp(0.8rem, 2vw, 1.2rem);
-    max-width: 100%;
-    width: 47%;
+    width: 100%;
+    max-width:520px;
 }
 
 
@@ -253,55 +253,17 @@ button{
     from{ transform:translateY(0); opacity:1; }
     to{ transform:translateY(-100vh); opacity:0; }
 }
-@media(max-width:500px){
-    .heart-box{
-        width:320px;
-        height:300px;
-        padding:40px 20px;
-    }
-    .heart-box h1{
-        font-size:1.5rem;
-    }
-    .heart-box p{
-        font-size:0.9rem;
-    }
-}
-/* Heartbeat animation */
-@keyframes heartbeat{
-    0%{ transform:rotate(-45deg) scale(1); }
-    50%{ transform:rotate(-45deg) scale(1.05); }
-    100%{ transform:rotate(-45deg) scale(1); }
-}
+
 
 @media(max-width:600px){
-
     .hero{
         gap:40px;
         margin-bottom:60px;
     }
-
-    .heart-box{
-        width:360px;
-        height:340px;
-        padding:40px;
+    @media (max-width: 600px) {
+        .heart-text {
+            font-size: 50%;
+        }
     }
-
-    .heart-box::before,
-    .heart-box::after{
-        width:360px;
-        height:340px;
-    }
-
-    .heart-box::before{
-        top:-180px;
-    }
-
-    .heart-box::after{
-        left:180px;
-    }
-
-    .heart-box > *{
-        font-size:1rem;
-    }
-}
+  }
 
