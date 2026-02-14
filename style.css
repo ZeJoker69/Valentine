@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff4e8a,#ff758c,#ff7eb3);
+    color:white;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    position:relative;
+}
+
+/* CUPID BACKGROUND */
+.cupid{
+    position:fixed;
+    width:200px;
+    opacity:0.25;
+    z-index:0;
+}
+
+/* ... and the rest of your CSS ... */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff4e8a,#ff758c,#ff7eb3);
+    color:white;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    position:relative;
+}
+
+/* CUPID BACKGROUND */
+.cupid{
+    position:fixed;
+    width:200px;
+    opacity:0.25;
+    z-index:0;
+}
+
+
+.cupid.left{
+    top:10%;
+    left:5%;
+}
+
+.cupid.right{
+    bottom:10%;
+    right:5%;
+    transform:scaleX(-1);
+}
+
+section{
+    padding:80px 10%;
+    min-height:100vh;
+    position:relative;
+    z-index:1;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:30px;
+    position:relative;
+}
+
+/* LOGO */
+.logo{
+    font-size:1rem;
+    background:rgba(255,255,255,0.2);
+    padding:8px 20px;
+    border-radius:30px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 15px rgba(255,255,255,0.4);
+}
+
+/* TITLE */
+.hero-title{
+    font-size:2.8rem;
+    position:relative;
+    animation:glow 2s infinite alternate;
+    padding-bottom: 150px;
+}
+
+/* Glowing effect */
+@keyframes glow{
+    from{ text-shadow:0 0 10px white; }
+    to{ text-shadow:0 0 25px white; }
+}
+
+/* Animated underline */
+.underline{
+    display:block;
+    width:0;
+    height:3px;
+    background:white;
+    margin:10px auto 0;
+    animation:expandLine 2s forwards;
+}
+
+@keyframes expandLine{
+    to{ width:60%; }
+}
+/* HERO SECTION FIX */
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:60px; /* pushes heart down */
+    margin-bottom:70px; /* prevents overlap with dashboard */
+}
+
+/* Heart container for positioning text on top of image */
+.heart-container {
+    position: relative;
+    width: auto;   /* adjust to match your image size */
+    max-width: 100%; /* responsive */
+    margin: 0 auto;
+}
+
+/* Heart image */
+.heart-img {
+    width: 1400px;
+    height: auto;
+    display: block;
+    position: relative;
+    left:-170px;
+}
+
+/* Text centered on top of the heart */
+.heart-text {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: darkred; /* text color */
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    line-height: 1.6;
+    font-size: 1.3rem;
+    max-width: 100%;
+    width: 47%;
+}
+
+
+
+
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:600px;
+}
+
+/* DASHBOARD */
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* Proposal Section */
+.proposal{
+    position:relative;
+    text-align:center;
+    background:rgba(255,255,255,0.1);
+    border-radius:30px;
+    padding:80px 20px;
+    overflow:hidden;
+    min-height:500px;
+}
+
+.proposal h2{
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.proposal p{
+    max-width:600px;
+    margin:0 auto 30px;
+    font-size:1.1rem;
+    line-height:1.6;
+}
+
+button{
+    padding:15px 40px;
+    border:none;
+    border-radius:30px;
+    font-size:1.2rem;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+}
+
+.yes{
+    background:white;
+    color:#ff4e8a;
+}
+
+.no{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+    position:absolute;
+}
+
+.success{
+    font-size:2rem;
+    margin-top:30px;
+    display:none;
+}
+
+/* floating hearts */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    font-size:20px;
+    animation:float 5s linear infinite;
+    opacity:0.7;
+}
+
+@keyframes float{
+    from{ transform:translateY(0); opacity:1; }
+    to{ transform:translateY(-100vh); opacity:0; }
+}
+@media(max-width:500px){
+    .heart-box{
+        width:320px;
+        height:300px;
+        padding:40px 20px;
+    }
+    .heart-box h1{
+        font-size:1.5rem;
+    }
+    .heart-box p{
+        font-size:0.9rem;
+    }
+}
+/* Heartbeat animation */
+@keyframes heartbeat{
+    0%{ transform:rotate(-45deg) scale(1); }
+    50%{ transform:rotate(-45deg) scale(1.05); }
+    100%{ transform:rotate(-45deg) scale(1); }
+}
+
+@media(max-width:600px){
+
+    .hero{
+        gap:40px;
+        margin-bottom:60px;
+    }
+
+    .heart-box{
+        width:360px;
+        height:340px;
+        padding:40px;
+    }
+
+    .heart-box::before,
+    .heart-box::after{
+        width:360px;
+        height:340px;
+    }
+
+    .heart-box::before{
+        top:-180px;
+    }
+
+    .heart-box::after{
+        left:180px;
+    }
+
+    .heart-box > *{
+        font-size:1rem;
+    }
+}

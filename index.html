@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Analytics Dashboard 💖</title>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" autoplay loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Cupids -->
+<img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="cupid left">
+<img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="cupid right">
+
+<section class="hero">
+    <!-- Logo -->
+    <div class="logo">💘 YPIT Love Analytics</div>
+
+    <!-- Title -->
+    <h1 class="hero-title">
+        Love Performance Dashboard
+        <span class="underline"></span>
+    </h1>
+
+    <!-- Heart Image with Centered Text -->
+    <div class="heart-container">
+        <img src="cupid.png" alt="Heart with angels" class="heart-img">
+        <div class="heart-text">
+            After running advanced emotional algorithms and deep heart learning models,<br>
+            I discovered something beautiful...<br>
+            You are not just part of my data —<br>
+            You are my entire dataset.<br><br>
+            Every line of my life’s code looks better with you in it.<br>
+            My heart compiles happiness whenever you smile.<br>
+            And honestly…<br> The best version of my future has <br>you in it.
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="dashboard">
+        <div class="card">
+            <h2>99.99%</h2>
+            <p>Compatibility Index</p>
+        </div>
+        <div class="card">
+            <h2>100%</h2>
+            <p>Heart Occupancy Rate</p>
+        </div>
+        <div class="card">
+            <h2>∞</h2>
+            <p>Forever Probability</p>
+        </div>
+        <div class="card">
+            <h2>📈</h2>
+            <p>Love Growth Trend</p>
+        </div>
+    </div>
+
+    <div style="max-width:400px;margin:auto;">
+        <canvas id="loveChart"></canvas>
+    </div>
+</section>
+
+<section>
+    <div class="proposal" id="proposalBox">
+        <h2>Final Emotional Forecast 💕</h2>
+        <p>
+            Every scenario I simulated ends the same way...
+            My happiest version of life includes you.
+            My heart beats faster when you're near.
+            My world feels softer when you smile.
+            So based on verified emotional intelligence...
+        </p>
+
+        <h2>Will You Be My Valentine? 💍</h2>
+
+        <button class="yes" onclick="acceptLove()">YES 💖</button>
+        <button class="no" id="noBtn">NO 😅</button>
+
+        <div class="success" id="successMessage">
+            🎉 Deployment Successful!
+            Welcome to Forever 💍❤️
+        </div>
+    </div>
+</section>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
