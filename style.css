@@ -255,15 +255,17 @@ button{
 }
 
 
-@media(max-width:600px){
+@media(max-width:500px){
     .hero{
         gap:40px;
         margin-bottom:60px;
     }
-    @media (max-width: 600px) {
-        .heart-text {
-            font-size: 50%;
-        }
+    .heart-text {
+        font-size: 50%;
     }
-  }
+    .body{
+        font-size: 45%;
+    }
+}
+
 
