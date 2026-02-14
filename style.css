@@ -1,26 +1,3 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-body{
-    background: linear-gradient(135deg,#ff4e8a,#ff758c,#ff7eb3);
-    color:white;
-    overflow-x:hidden;
-    scroll-behavior:smooth;
-    position:relative;
-}
-
-/* CUPID BACKGROUND */
-.cupid{
-    position:fixed;
-    width:200px;
-    opacity:0.25;
-    z-index:0;
-}
-
 /* ... and the rest of your CSS ... */
 *{
     margin:0;
@@ -36,6 +13,16 @@ body{
     scroll-behavior:smooth;
     position:relative;
 }
+
+
+/* CUPID BACKGROUND */
+.cupid{
+    position:fixed;
+    width:200px;
+    opacity:0.25;
+    z-index:0;
+}
+
 
 /* CUPID BACKGROUND */
 .cupid{
@@ -133,13 +120,23 @@ section{
 
 /* Heart image */
 .heart-img {
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* position: relative;
+    left:-170px; */
+}
+
+/* .heart-img {
+    width: 100%;
+    max-width: 500px;
     height: auto;
     display: block;
     position: relative;
     left:-170px;
-}
-
+} */
 /* Text centered on top of the heart */
 .heart-text {
     position: absolute;
@@ -151,7 +148,7 @@ section{
     font-family: 'Times New Roman', serif;
     font-weight: bold;
     line-height: 1.6;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     max-width: 100%;
     width: 47%;
 }
